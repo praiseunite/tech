@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "syntaxFE_backend": {
+      "candid": "src/syntaxFE_backend/syntaxFE_backend.did",
+      "package": "syntaxFE_backend",
+      "type": "rust"
+    },
+    "syntaxFE_frontend": {
+      "dependencies": [
+        "syntaxFE_backend"
+      ],
+      "source": [
+        "src/syntaxFE_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "syntaxFE_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
